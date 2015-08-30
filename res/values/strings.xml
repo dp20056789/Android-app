@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exchange</string>
+    <string name="exchange">Exchange</string>
+    <string name="action_settings">Settings</string>
+    <string name="fromCurrency">fromCurrency:</string>
+    <string name="toCurrency">toCurrency:</string>
+    <string name="currency">currency:</string>
+    <string name="convertedAmount">convertedAmount:</string>
+    <string name="convertedButtton">convert</string>
+    <string name="reverseButtton">reverse</string>
+    <string name="fromCurrencyIsNull">fromCurrency is null</string>
+    <string name="toCurrencyIsNull">toCurrency is null</string>
+    <string name="responseFail">obtain failed</string>
+    <string name="fromEqualsTo">please choose the different currency</string>
+    <string name="netAccessIsNull">network is closed, please check it</string>
+
+</resources>

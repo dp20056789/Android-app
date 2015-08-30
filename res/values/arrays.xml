@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="spinner">
+        <item> </item>    
+        <item>人民币 CNY</item>
+        <item>美元 USD</item>
+        <item>台币 TWD</item>
+        <item>港币 HKD</item>
+        <item>澳门元 MOP</item>
+        <item>澳元 AUD</item>
+        <item>欧元 EUR</item>
+        <item>瑞典克朗 SEK</item>
+        <item>日元 JPY</item>
+        <item>韩元 KPW</item>     
+        <item>俄罗斯卢布 RUB</item>
+        <item>加拿大元 CAD</item>
+        <item>加拿大元 CAD</item>
+        <item>新加坡元 SGD</item>
+        <item>印度卢比 INR</item>
+        <item>印尼盾 IDR</item>
+        <item>泰铢 THB</item>
+        <item>越南盾 VND</item>
+        <item>马来西亚元 MYR</item>
+        <item>菲律宾比索 PHP</item>  
+        <item>埃及镑 EGP</item>
+        <item>阿联酋迪拉姆 AED</item>
+        <item>巴基斯坦卢比 PKR</item>       
+    </string-array>  
+</resources>

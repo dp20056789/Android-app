@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    >
+
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/exchange" 
+    android:textSize="15sp"
+    android:textAppearance="?android:attr/textAppearanceLarge"  
+    android:gravity="center_vertical|center_horizontal"
+    android:background="#87CEEB"/>
+        
+  <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:layout_below="@+id/title" >
+
+    	<TextView
+        	android:id="@+id/fromCurrency"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/fromCurrency"
+            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"  
+            android:gravity="center_vertical" 
+            android:layout_alignTop="@+id/fromCurrencySpinner"
+            android:layout_alignBottom="@+id/fromCurrencySpinner"
+        	/>
+
+    	<Spinner
+    	    android:id="@+id/fromCurrencySpinner"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/fromCurrency"
+        	android:layout_alignLeft="@+id/convertedAmountEdit"
+         />
+
+
+
+    	<TextView
+        	android:id="@+id/toCurrency"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/toCurrency" 
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"      
+            android:layout_below="@+id/fromCurrency"
+            android:layout_alignTop="@+id/toCurrencySpinner"
+            android:layout_alignBottom="@+id/toCurrencySpinner" 
+        	/>
+
+    	<Spinner
+    	    android:id="@+id/toCurrencySpinner"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+            android:layout_below="@+id/fromCurrency"
+        	android:layout_toRightOf="@+id/toCurrency"
+        	android:layout_alignLeft="@+id/convertedAmountEdit"
+         />
+
+
+
+    	<TextView
+        	android:id="@+id/currency"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/currency" 
+            android:textSize="15sp" 
+            android:textAppearance="?android:attr/textAppearanceLarge"     
+            android:gravity="center_vertical" 
+            android:layout_below="@+id/toCurrency" 
+            android:layout_alignTop="@+id/currencyResponse"
+            android:layout_alignBottom="@+id/currencyResponse"  
+        	/>
+
+    	<EditText
+    	    android:id="@+id/currencyResponse"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="left"
+            android:layout_below="@+id/toCurrency"  
+        	android:layout_toRightOf="@+id/currency"
+        	android:layout_alignLeft="@+id/convertedAmountEdit"
+        	
+         />
+
+    
+
+    	<TextView
+        	android:id="@+id/convertedAmount"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/convertedAmount"
+            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"      
+            android:gravity="center_vertical" 
+            android:layout_below="@+id/currency" 
+            android:layout_alignTop="@+id/convertedAmountEdit"
+            android:layout_alignBottom="@+id/convertedAmountEdit" 
+        	/>
+
+    	<EditText
+    	    android:id="@+id/convertedAmountEdit"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="number"
+        	android:hint="10000"
+        	android:gravity="left"
+            android:layout_below="@+id/currency" 
+        	android:layout_toRightOf="@+id/convertedAmount"
+         />
+    	
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/reverse_btn"
+    	android:text="@string/reverseButtton"
+        android:layout_below="@+id/convertedAmount"
+        android:layout_alignParentLeft="true"
+    />
+    
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/convert_btn"
+    	android:text="@string/convertedButtton"
+        android:layout_below="@+id/convertedAmountEdit"
+        android:layout_alignParentRight="true"
+    />
+    
+    <TextView
+    	android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:layout_below="@+id/convert_btn"
+     />
+     
+     <TextView
+    	android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:layout_below="@+id/result"
+      /> 
+ </RelativeLayout>     	
+</LinearLayout>

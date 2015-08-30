@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">汇率换算</string>
+    <string name="exchange">汇率换算</string>
+    <string name="action_settings">Settings</string>
+    <string name="fromCurrency">原始货币:</string>
+    <string name="toCurrency">目标货币:</string>
+    <string name="currency">当前汇率:</string>
+    <string name="convertedAmount">兑换金额:</string>
+    <string name="convertedButtton">兑换</string>
+    <string name="reverseButtton">反向</string>
+    <string name="fromCurrencyIsNull">原始货币为空</string>
+    <string name="toCurrencyIsNull">目标货币为空</string>
+    <string name="responseFail">获取失败</string>
+    <string name="fromEqualsTo">请选择不同的货币单位</string>
+    <string name="netAccessIsNull">网络没有打开，请检查网络状态</string>
+
+</resources>
